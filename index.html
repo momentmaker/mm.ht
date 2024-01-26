@@ -26,8 +26,10 @@
       h3.addEventListener('click', function () {
         if (this.textContent.includes('⬡')) {
           this.textContent = '⬢ṁ:ṃ⬢';
+          document.title = '⬢ṁ:ṃ⬢';
         } else {
           this.textContent = '⬡ṃ:ṁ⬡';
+          document.title = '⬡ṃ:ṁ⬡';
         }
       });
     }
