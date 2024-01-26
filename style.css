@@ -14,6 +14,10 @@ h3 {
   transform: translate(-50%, -50%);
 }
 
+#mm:hover {
+  cursor: pointer;
+}
+
 img {
   border: 1px solid #375bd2;
   border-radius: 7px;
