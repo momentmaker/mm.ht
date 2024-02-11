@@ -24,14 +24,19 @@
     async></script>
   <script>
     function init() {
-      var h3 = document.getElementById('mm');
+      let h3 = document.getElementById('mm');
+      let counter = 0;
       h3.addEventListener('click', function () {
+        counter++;
         if (this.textContent.includes('⬡')) {
           this.textContent = '⬢ṁ:ṃ⬢';
           document.title = '⬢ṁ:ṃ⬢';
         } else {
           this.textContent = '⬡ṃ:ṁ⬡';
           document.title = '⬡ṃ:ṁ⬡';
+        }
+        if (counter === 12) {
+          this.innerHTML = '<a href="https://um.mm.ht" style="text-decoration: none; color: #488000;">û:ṃ</a>';
         }
       });
     }
